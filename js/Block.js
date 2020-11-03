@@ -27,9 +27,9 @@ class Block{
         else{
           World.remove(world,this.body);
           push();        
-          //this.visibility=this.visibility-5;
+          this.visibility=this.visibility-5;
           //tint(255,this.visibility); //visibility and tint will apply for images. Here, theer are no images. Only rectangles are displayed using rect
-          rect(this.body.position.x,this.body.position.y,this.width, this.height); //rect(0,0,this.width, this.height);
+          //rect(this.body.position.x,this.body.position.y,this.width, this.height); //rect(0,0,this.width, this.height);
           pop();
         }
       }
